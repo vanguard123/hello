@@ -223,18 +223,18 @@ html,body{
     }
 
     #text2{
-        font-size: 6pt;
+        font-size: 7pt;
         /*animation: none;*/
     }
 
     #text2E{
         /*animation: none;*/
-        font-size: 4.8pt;
+        font-size: 6pt;
     }
 
     @keyframes animated-text{
         from{width: 0;}
-        to{width: 400px;}
+        to{width: 350px;}
     }
 
     #leftMage{
