@@ -223,13 +223,13 @@ html,body{
     }
 
     #text2{
-        font-size: 7pt;
+        font-size: 8.5pt;
         /*animation: none;*/
     }
 
     #text2E{
         /*animation: none;*/
-        font-size: 5pt;
+        font-size: 5.5pt;
     }
 
     @keyframes animated-text{
