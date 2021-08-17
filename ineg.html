@@ -284,36 +284,13 @@
         window.onLoad=SlideShow15.play();SlideShow16.play();SlideShow17.play();SlideShow18.play();SlideShow19.play();SlideShow20.play();SlideShow21.play();
         window.onLoad=SlideShow22.play();SlideShow23.play();SlideShow24.play();SlideShow25.play();SlideShow26.play();SlideShow27.play();SlideShow28.play();
         </script>
-
-        <div id="top" class="top">
-            <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
-        </div>
-
+        
         <script>
             var n = new Date();
             var y = n.getFullYear();
             var m = n.getMonth() + 1;
             var d = n.getDate();
             document.getElementById("date").innerHTML = d + "-" + m + "-" + y;
-
-            var mybutton = document.getElementById("topButton");
-            window.onscroll = function(){
-                scrollFunction()
-            };
-
-            function scrollFunction(){
-                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-                    mybutton.style.display = "block";
-                }
-                else{
-                    mybutton.style.display = "none";
-                }
-            }
-
-            function topFunction(){
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
         </script>
     </body>
 </html>
