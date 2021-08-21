@@ -169,7 +169,8 @@ html,body{
     white-space: nowrap;
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace;  
-    font-size: 25px;
+    font-size: 24.7px;
+    margin-bottom: 0px;
 }
 
 /* Animation */
@@ -194,11 +195,11 @@ html,body{
 }
 
 #lowImg{
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #lowImgE{
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .heart{
