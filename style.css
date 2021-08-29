@@ -217,6 +217,16 @@ html,body{
     width: 25px;
 }
 
+@media screen and (max-width: 600px){
+    #leftMage{
+        margin-left: 400px;
+    }
+    
+    #rightMage{
+        margin-right: 400px;
+    }
+}
+
 @media screen and (max-width: 1535px){
     .top{
         display: none;
