@@ -2,50 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://vanguard123.com">
-    <link rel="icon" href="me.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style2.css">
-    <title>Ready Page</title>
+    <title>Login Form</title>
+    <style>
+        /* Add some basic styling for better appearance */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #c640b2;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="nav" id="nav">
-        <div id="languages" class="languages">
-            <button class="drop">Language</button>
-            <div class="content">
-                <a href="#" id="id">English</a>
-                <a href="loginM.html" id="id">Mandarin</a>
-            </div>
-        </div>
-    </div>
 
-    <br/>
+<form action="fireworks.html" onsubmit="return validateForm()">
+    <label for="username">Name:</label>
+    <input type="text" id="username" required>
 
-    <div id="first" class="first">
-        <p id="logText" class="logText">
-            <b>Happy Valentine's Day Ms Vivien Lim Shi Ting</b><br/><br/><br/>
-            After read scroll down
-        </p>
-    </div>
+    <label for="password">Pin:</label>
+    <input type="text" id="password" required>
 
-    <div id="first" class="first">
-        <p id="logText" class="logText">
-            <b>Welcome to 20 years old</b><br/><br/><br/>
-            After read scroll down
-        </p>
-    </div>
+    <button type="submit">Login</button>
+</form>
 
-    <div id="first" class="first">
-        <p id="logText" class="logText">
-            <b>Hope you have the better day from now</b><br/><br/><br/>
-            After read scroll down
-        </p>
-    </div>
+<script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
 
-    
-    <a href="ineg.html" class="a" id="a">Click Me</a>
-   
+        // Simple validation, you can add more conditions
+        if (username === 'Vivien Lim Shi Ting' && password === '514177') {
+            alert('Congratulations');
+            return true;
+        }
+        else if (username === '' || password === '') {
+            alert('Name and pin cannot be empty.');
+            return false;
+        }
+        else{
+            alert('Wrong name or pin.');
+            return false;
+        }
+
+        window.location.href = 'fireworks.html';
+        return true;
+    }
+</script>
+
 </body>
 </html>
