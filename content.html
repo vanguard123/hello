@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="me.jpg" type="image/x-icon">
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div id="slideshow-container">
+        <img id="slideshow-image" src="image/1.jpg">
+    </div>
+    
+    <script>
+        // Array of image URLs
+        const images = ["image/1.jpg", "love/img19.jpg", "love2/img.jpg"];
+        let currentIndex = 0;
+    
+        // Function to change the image
+        function changeImage() {
+            document.getElementById('slideshow-image').src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+            setTimeout(changeImage, 2000); // Change image every 3 seconds 3000
+        }
+    
+        // Start the image slideshow
+        changeImage();
+    
+        // Redirect to another page after all images are displayed
+        setTimeout(() => {
+            window.location.href = 'fireworks.html';
+        }, images.length * 10000000000000000); // Adjust the time based on the number of images
+    </script>
+</body>
+</html>
