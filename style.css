@@ -265,7 +265,8 @@
     }
 
     .heart2{
-        display: none;
+        height: 14px;
+        width: 14px;
     }
 
     .text{
