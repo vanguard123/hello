@@ -29,16 +29,16 @@
     position: absolute;
     color: white;
     white-space: nowrap;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
-.content p {
+.content{
     animation: animated-text 2s steps(30,end) 5s 1 normal both;
 }
 
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 1100px;}
+    to{width: 100%;}
 }
 
 .navbar{
@@ -173,15 +173,15 @@
 }
 
 /* Animation */
-#text2 {
+/* #text2 {
     animation: animated-text 2s steps(30,end) 5s 1 normal both;
-}
+} */
 
 /* text animation */
-@keyframes animated-text{
+/* @keyframes animated-text{
     from{width: 0;}
     to{width: 1100px;}
-}
+} */
 
 #text2E {
     white-space: nowrap;
@@ -192,15 +192,15 @@
 }
 
 /* Animation */
-#text2E {
+/* #text2E {
     animation: animated-text 2s steps(30,end) 5s 1 normal both;
-}
+} */
 
 /* text animation */
-@keyframes animated-text{
+/* @keyframes animated-text{
     from{width: 0;}
     to{width: 1100px;}
-}
+} */
 
 #leftMage{
     float: left; 
@@ -251,9 +251,13 @@
         font-size: 4.8pt;
     }
 
+    .content{
+        width: 100%;
+    }
+
     @keyframes animated-text{
         from{width: 0;}
-        to{width: 400px;}
+        to{width: 100%;}
     }
 
     #leftMage{
